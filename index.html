@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partículas - Cássio e Frederico</title>
+    <!--CSS DO BOOTSTRAP-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" style="color:white">Partículas: por Cássio Gamarra e Frederico Hartmann</a>
+        </div>
+    </nav>
+    <br/>
+    <div class="container text-center">
+        <form>          
+            <div class="form-group">
+                <h1 class="badge badge-dark">Número de partículas*:</h1>
+                <input type="number" class="form-control form-control-lg" id="qtdParticulas" min="3" max="15">
+                <small class="form-text text-muted">*máximo de 15 partículas</small>
+            </div>
+            <button type="button" onclick="loop()" class="btn btn-primary">Rodar Simulação</button>
+          </form>
+    </div>
+    <br/>
+    <div class="container text-center">
+        <canvas id="canvas">
+
+        </canvas>
+    </div>
+    <script type="application/javascript" src="js/main.js"></script>
+</body>
+</html>
