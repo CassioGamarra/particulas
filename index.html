@@ -17,19 +17,25 @@
     <div class="container text-center">
         <form>          
             <div class="form-group">
-                <h1 class="badge badge-dark">Número de partículas*:</h1>
-                <input type="number" class="form-control form-control-lg" id="qtdParticulas" min="3" max="15">
-                <small class="form-text text-muted">*máximo de 15 partículas</small>
+                <h4 class="badge-dark">Número de partículas*:</h4>
+                <input type="number" class="form-control form-control-lg" id="qtdParticulas" min="3" max="15" value="3">
+                <small class="form-text text-muted">*máximo de 15 partículas | Se a simulação começar com um valor não esperado, pressione F5</small>
             </div>
-            <button type="button" onclick="loop()" class="btn btn-primary">Rodar Simulação</button>
+            <button type="button" onclick="simular()" class="btn btn-dark">Rodar Simulação</button>
           </form>
     </div>
     <br/>
     <div class="container text-center">
         <canvas id="canvas">
-
+            <script type="application/javascript" src="js/particula.js"></script>
+            <script type="application/javascript" src="js/util.js"></script>
+            <script type="application/javascript" src="js/main.js"></script>
         </canvas>
     </div>
-    <script type="application/javascript" src="js/main.js"></script>
+    <div class="container text-center">
+        <small class="badge badge-dark">Obs.: as vezes a última partícula não muda de cor ao finalizar a simulação, porém é possível verificar o número de partículas pretas no console.</small>
+    </div>
+    <br/>
+    <br/>
 </body>
 </html>
